@@ -5,6 +5,7 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
 
+import java.time.LocalDateTime;
 import java.util.Iterator;
 
 /**
@@ -18,27 +19,61 @@ public class GrpcClient {
 
         StudentServiceGrpc.StudentServiceBlockingStub blockingStub = StudentServiceGrpc.newBlockingStub(managedChannel);
         StudentServiceGrpc.StudentServiceStub studentServiceStub = StudentServiceGrpc.newStub(managedChannel);
-        MyResponse myResponse = blockingStub.getRealnameByusername(MyRequest.newBuilder().setUsername("zhangsan").build());
-        System.out.println(myResponse.getRealname());
-        System.out.println("-------------------------------");
-        Iterator<StudentResponse> responseIterator = blockingStub.getStudentsByAge(StudentAge.newBuilder().setAge(16).build());
-        while (responseIterator.hasNext()){
-            StudentResponse studentResponse = responseIterator.next();
-            System.out.println(studentResponse.getName() + ", " + studentResponse.getCity() + ", " + studentResponse.getAge());
-        }
-        System.out.println("-------------------------------");
+//        MyResponse myResponse = blockingStub.getRealnameByusername(MyRequest.newBuilder().setUsername("zhangsan").build());
+//        System.out.println(myResponse.getRealname());
+//        System.out.println("-------------------------------");
+//        Iterator<StudentResponse> responseIterator = blockingStub.getStudentsByAge(StudentAge.newBuilder().setAge(16).build());
+//        while (responseIterator.hasNext()){
+//            StudentResponse studentResponse = responseIterator.next();
+//            System.out.println(studentResponse.getName() + ", " + studentResponse.getCity() + ", " + studentResponse.getAge());
+//        }
+//        System.out.println("-------------------------------");
+//
+//
+//        StreamObserver<StudentResponseList> studentResponseListStreamObserver =new StreamObserver<StudentResponseList>() {
+//            @Override
+//            public void onNext(StudentResponseList value) {
+//
+//                value.getStudentResponseList().forEach(studentResponse -> {
+//                    System.out.println(studentResponse.getName());
+//                    System.out.println(studentResponse.getAge());
+//                    System.out.println(studentResponse.getCity());
+//                    System.out.println("*********************");
+//                });
+//
+//            }
+//
+//            @Override
+//            public void onError(Throwable t) {
+//
+//                System.out.println(t.getMessage());
+//
+//            }
+//
+//            @Override
+//            public void onCompleted() {
+//
+//                System.out.println("completed");
+//
+//            }
+//        };
+//
+//
+//        StreamObserver<StudentAge> studentAgeStreamObserver = studentServiceStub.getStudentWrapperByAges(studentResponseListStreamObserver);
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(20).build());
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(21).build());
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(22).build());
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(23).build());
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(24).build());
+//        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(25).build());
+//        studentAgeStreamObserver.onCompleted();
 
 
-        StreamObserver<StudentResponseList> studentResponseListStreamObserver =new StreamObserver<StudentResponseList>() {
+        StreamObserver<StreamRequest> requestStreamObserver = studentServiceStub.bitalk(new StreamObserver<StreamResponse>() {
             @Override
-            public void onNext(StudentResponseList value) {
+            public void onNext(StreamResponse value) {
 
-                value.getStudentResponseList().forEach(studentResponse -> {
-                    System.out.println(studentResponse.getName());
-                    System.out.println(studentResponse.getAge());
-                    System.out.println(studentResponse.getCity());
-                    System.out.println("*********************");
-                });
+                System.out.println(value.getResponseInfo());
 
             }
 
@@ -52,22 +87,17 @@ public class GrpcClient {
             @Override
             public void onCompleted() {
 
-                System.out.println("completed");
+                System.out.println("onCompleted");
 
             }
-        };
+        });
 
+        for(int i = 0 ; i < 10 ; i ++){
+            requestStreamObserver.onNext(StreamRequest.newBuilder().setRequestInfo(LocalDateTime.now().toString()).build());
+            Thread.sleep(1000);
+        }
 
-        StreamObserver<StudentAge> studentAgeStreamObserver = studentServiceStub.getStudentWrapperByAges(studentResponseListStreamObserver);
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(20).build());
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(21).build());
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(22).build());
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(23).build());
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(24).build());
-        studentAgeStreamObserver.onNext(StudentAge.newBuilder().setAge(25).build());
-        studentAgeStreamObserver.onCompleted();
-
-        Thread.sleep(50000);
+        Thread.sleep(5000);
 
 
     }

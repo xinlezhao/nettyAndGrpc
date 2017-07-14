@@ -3,6 +3,8 @@ package com.xinle.grpc;
 import com.xinle.protolearn.*;
 import io.grpc.stub.StreamObserver;
 
+import java.util.UUID;
+
 /**
  * Created by xinle on 7/13/17.
  */
@@ -58,6 +60,38 @@ public class GrpcServiceImpl extends StudentServiceGrpc.StudentServiceImplBase {
 
             }
         };
+    }
+
+
+    @Override
+    public StreamObserver<StreamRequest> bitalk(StreamObserver<StreamResponse> responseObserver) {
+
+
+        return new StreamObserver<StreamRequest>() {
+            @Override
+            public void onNext(StreamRequest value) {
+
+                System.out.println(value.getRequestInfo());
+
+                responseObserver.onNext(StreamResponse.newBuilder().setResponseInfo(UUID.randomUUID().toString()).build());
+
+            }
+
+            @Override
+            public void onError(Throwable t) {
+
+                System.out.println(t.getMessage());
+            }
+
+            @Override
+            public void onCompleted() {
+
+                responseObserver.onCompleted();
+
+            }
+        };
+
+
 
 
     }

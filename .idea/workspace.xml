@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8754151-2bf7-4728-9d1f-efec2a62f1a1" name="Default" comment="" />
+    <list default="true" id="d8754151-2bf7-4728-9d1f-efec2a62f1a1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/proto/xinle.proto" afterPath="$PROJECT_DIR$/src/main/proto/xinle.proto" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -35,16 +38,6 @@
                 <option name="myItemId" value="netty" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
               </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="netty" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
               <PATH_ELEMENT>
                 <option name="myItemId" value="Tasks" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
@@ -68,6 +61,16 @@
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="netty" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
           </tree_state>
         </projects_view>
       </state>
@@ -75,11 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="424">
+              <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -90,9 +93,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2940">
               <caret line="217" column="66" lean-forward="false" selection-start-line="217" selection-start-column="66" selection-end-line="217" selection-end-column="66" />
-              <folding>
-                <element signature="e#1524#1589#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,8 +101,8 @@
       <file leaf-file-name="xinle.proto" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/proto/xinle.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -110,7 +111,7 @@
       <file leaf-file-name="xinle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/xinle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="420">
               <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
               <folding>
                 <element signature="e#0#3091#0" expanded="true" />
@@ -122,7 +123,7 @@
       <file leaf-file-name="GrpcServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="150">
               <caret line="13" column="103" lean-forward="false" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,8 +135,8 @@
       <file leaf-file-name="GrpcServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="405">
+              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,14 +144,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrpcClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GrpcClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +157,7 @@
       <file leaf-file-name="MyRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/MyRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
+            <state relative-caret-position="405">
               <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <element signature="e#0#15875#0" expanded="true" />
@@ -170,7 +169,7 @@
       <file leaf-file-name="MyResponseOrBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/MyResponseOrBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="60">
               <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <element signature="e#0#484#0" expanded="true" />
@@ -197,6 +196,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -647,10 +649,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xinle/netty/thrift/ThriftServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xinle/netty/thrift/ThrifyClient.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/proto/xinle.proto" />
         <option value="$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcClient.java" />
+        <option value="$PROJECT_DIR$/src/main/proto/xinle.proto" />
       </list>
     </option>
   </component>
@@ -661,11 +663,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1803" />
-    <option name="y" value="59" />
-    <option name="width" value="1690" />
-    <option name="height" value="977" />
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -681,9 +683,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -767,96 +769,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xinle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xinle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xinle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -865,6 +777,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1494,45 +1407,46 @@
       <workItem from="1499735341085" duration="5424000" />
       <workItem from="1499821662224" duration="861000" />
       <workItem from="1499908249462" duration="3838000" />
-      <workItem from="1499938293159" duration="3462000" />
+      <workItem from="1499938293159" duration="3622000" />
+      <workItem from="1499993471726" duration="1062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35618000" />
+    <option name="totallyTimeSpent" value="36840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1803" y="59" width="1690" height="977" extended-state="0" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13106796" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46666667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30891088" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23725729" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20660277" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46666667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30891088" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21033014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20660277" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115015976" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1737,175 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15450">
           <caret line="1077" column="16" lean-forward="false" selection-start-line="1077" selection-start-column="16" selection-end-line="1077" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#123689#0" expanded="false" />
-            <element signature="e#2536#2537#0" expanded="false" />
-            <element signature="e#2564#2565#0" expanded="false" />
-            <element signature="e#2590#2591#0" expanded="false" />
-            <element signature="e#2617#2618#0" expanded="false" />
-            <element signature="e#2720#2721#0" expanded="false" />
-            <element signature="e#2759#2760#0" expanded="false" />
-            <element signature="e#7841#7842#0" expanded="false" />
-            <element signature="e#7871#7872#0" expanded="false" />
-            <element signature="e#8028#8029#0" expanded="false" />
-            <element signature="e#8069#8070#0" expanded="false" />
-            <element signature="e#8408#8409#0" expanded="false" />
-            <element signature="e#8449#8450#0" expanded="false" />
-            <element signature="e#8690#8691#0" expanded="false" />
-            <element signature="e#8757#8758#0" expanded="false" />
-            <element signature="e#8877#8878#0" expanded="false" />
-            <element signature="e#8944#8945#0" expanded="false" />
-            <element signature="e#9045#9046#0" expanded="false" />
-            <element signature="e#9085#9086#0" expanded="false" />
-            <element signature="e#9755#9756#0" expanded="false" />
-            <element signature="e#9791#9792#0" expanded="false" />
-            <element signature="e#10207#10208#0" expanded="false" />
-            <element signature="e#10243#10244#0" expanded="false" />
-            <element signature="e#10403#10404#0" expanded="false" />
-            <element signature="e#10444#10445#0" expanded="false" />
-            <element signature="e#10743#10744#0" expanded="false" />
-            <element signature="e#10778#10779#0" expanded="false" />
-            <element signature="e#11111#11112#0" expanded="false" />
-            <element signature="e#11173#11174#0" expanded="false" />
-            <element signature="e#11778#11779#0" expanded="false" />
-            <element signature="e#11817#11818#0" expanded="false" />
-            <element signature="e#12684#12685#0" expanded="false" />
-            <element signature="e#12723#12724#0" expanded="false" />
-            <element signature="e#13554#13555#0" expanded="false" />
-            <element signature="e#13593#13594#0" expanded="false" />
-            <element signature="e#21975#21976#0" expanded="false" />
-            <element signature="e#22024#22025#0" expanded="false" />
-            <element signature="e#23612#23613#0" expanded="false" />
-            <element signature="e#23663#23664#0" expanded="false" />
-            <element signature="e#26121#26122#0" expanded="false" />
-            <element signature="e#26169#26170#0" expanded="false" />
-            <element signature="e#29630#29631#0" expanded="false" />
-            <element signature="e#29696#29697#0" expanded="false" />
-            <element signature="e#31171#31172#0" expanded="false" />
-            <element signature="e#31214#31215#0" expanded="false" />
-            <element signature="e#36242#36243#0" expanded="false" />
-            <element signature="e#36285#36286#0" expanded="false" />
-            <element signature="e#41124#41125#0" expanded="false" />
-            <element signature="e#41167#41168#0" expanded="false" />
-            <element signature="e#46452#46453#0" expanded="false" />
-            <element signature="e#46489#46490#0" expanded="false" />
-            <element signature="e#47022#47023#0" expanded="false" />
-            <element signature="e#47049#47050#0" expanded="false" />
-            <element signature="e#47144#47145#0" expanded="false" />
-            <element signature="e#47171#47172#0" expanded="false" />
-            <element signature="e#47263#47264#0" expanded="false" />
-            <element signature="e#47300#47301#0" expanded="false" />
-            <element signature="e#48622#48623#0" expanded="false" />
-            <element signature="e#48650#48651#0" expanded="false" />
-            <element signature="e#48837#48838#0" expanded="false" />
-            <element signature="e#48876#48877#0" expanded="false" />
-            <element signature="e#50710#50711#0" expanded="false" />
-            <element signature="e#50813#50814#0" expanded="false" />
-            <element signature="e#51431#51432#0" expanded="false" />
-            <element signature="e#51493#51494#0" expanded="false" />
-            <element signature="e#52602#52603#0" expanded="false" />
-            <element signature="e#52664#52665#0" expanded="false" />
-            <element signature="e#52750#52751#0" expanded="false" />
-            <element signature="e#52775#52776#0" expanded="false" />
-            <element signature="e#52977#52978#0" expanded="false" />
-            <element signature="e#53039#53040#0" expanded="false" />
-            <element signature="e#60784#60785#0" expanded="false" />
-            <element signature="e#60833#60834#0" expanded="false" />
-            <element signature="e#61763#61764#0" expanded="false" />
-            <element signature="e#61870#61871#0" expanded="false" />
-            <element signature="e#62394#62395#0" expanded="false" />
-            <element signature="e#62445#62446#0" expanded="false" />
-            <element signature="e#64570#64571#0" expanded="false" />
-            <element signature="e#64618#64619#0" expanded="false" />
-            <element signature="e#66547#66548#0" expanded="false" />
-            <element signature="e#66576#66577#0" expanded="false" />
-            <element signature="e#67477#67478#0" expanded="false" />
-            <element signature="e#67543#67544#0" expanded="false" />
-            <element signature="e#69552#69553#0" expanded="false" />
-            <element signature="e#69618#69619#0" expanded="false" />
-            <element signature="e#69712#69713#0" expanded="false" />
-            <element signature="e#69741#69742#0" expanded="false" />
-            <element signature="e#70325#70326#0" expanded="false" />
-            <element signature="e#70391#70392#0" expanded="false" />
-            <element signature="e#73099#73100#0" expanded="false" />
-            <element signature="e#73136#73137#0" expanded="false" />
-            <element signature="e#73654#73655#0" expanded="false" />
-            <element signature="e#73681#73682#0" expanded="false" />
-            <element signature="e#73773#73774#0" expanded="false" />
-            <element signature="e#73800#73801#0" expanded="false" />
-            <element signature="e#73889#73890#0" expanded="false" />
-            <element signature="e#73926#73927#0" expanded="false" />
-            <element signature="e#74905#74906#0" expanded="false" />
-            <element signature="e#74933#74934#0" expanded="false" />
-            <element signature="e#75096#75097#0" expanded="false" />
-            <element signature="e#75135#75136#0" expanded="false" />
-            <element signature="e#76770#76771#0" expanded="false" />
-            <element signature="e#76870#76871#0" expanded="false" />
-            <element signature="e#77479#77480#0" expanded="false" />
-            <element signature="e#77541#77542#0" expanded="false" />
-            <element signature="e#78650#78651#0" expanded="false" />
-            <element signature="e#78712#78713#0" expanded="false" />
-            <element signature="e#78798#78799#0" expanded="false" />
-            <element signature="e#78823#78824#0" expanded="false" />
-            <element signature="e#84942#84943#0" expanded="false" />
-            <element signature="e#84991#84992#0" expanded="false" />
-            <element signature="e#85909#85910#0" expanded="false" />
-            <element signature="e#86013#86014#0" expanded="false" />
-            <element signature="e#86525#86526#0" expanded="false" />
-            <element signature="e#86576#86577#0" expanded="false" />
-            <element signature="e#88458#88459#0" expanded="false" />
-            <element signature="e#88506#88507#0" expanded="false" />
-            <element signature="e#90283#90284#0" expanded="false" />
-            <element signature="e#90312#90313#0" expanded="false" />
-            <element signature="e#91207#91208#0" expanded="false" />
-            <element signature="e#91273#91274#0" expanded="false" />
-            <element signature="e#93282#93283#0" expanded="false" />
-            <element signature="e#93348#93349#0" expanded="false" />
-            <element signature="e#93442#93443#0" expanded="false" />
-            <element signature="e#93471#93472#0" expanded="false" />
-            <element signature="e#94655#94656#0" expanded="false" />
-            <element signature="e#94692#94693#0" expanded="false" />
-            <element signature="e#95195#95196#0" expanded="false" />
-            <element signature="e#95222#95223#0" expanded="false" />
-            <element signature="e#95311#95312#0" expanded="false" />
-            <element signature="e#95338#95339#0" expanded="false" />
-            <element signature="e#95424#95425#0" expanded="false" />
-            <element signature="e#95461#95462#0" expanded="false" />
-            <element signature="e#96580#96581#0" expanded="false" />
-            <element signature="e#96608#96609#0" expanded="false" />
-            <element signature="e#96773#96774#0" expanded="false" />
-            <element signature="e#96812#96813#0" expanded="false" />
-            <element signature="e#98502#98503#0" expanded="false" />
-            <element signature="e#98602#98603#0" expanded="false" />
-            <element signature="e#99211#99212#0" expanded="false" />
-            <element signature="e#99273#99274#0" expanded="false" />
-            <element signature="e#100409#100410#0" expanded="false" />
-            <element signature="e#100471#100472#0" expanded="false" />
-            <element signature="e#107593#107594#0" expanded="false" />
-            <element signature="e#107642#107643#0" expanded="false" />
-            <element signature="e#108560#108561#0" expanded="false" />
-            <element signature="e#108664#108665#0" expanded="false" />
-            <element signature="e#109176#109177#0" expanded="false" />
-            <element signature="e#109227#109228#0" expanded="false" />
-            <element signature="e#111113#111114#0" expanded="false" />
-            <element signature="e#111161#111162#0" expanded="false" />
-            <element signature="e#112995#112996#0" expanded="false" />
-            <element signature="e#113024#113025#0" expanded="false" />
-            <element signature="e#113919#113920#0" expanded="false" />
-            <element signature="e#113985#113986#0" expanded="false" />
-            <element signature="e#116015#116016#0" expanded="false" />
-            <element signature="e#116081#116082#0" expanded="false" />
-            <element signature="e#118720#118721#0" expanded="false" />
-            <element signature="e#118757#118758#0" expanded="false" />
-            <element signature="e#119260#119261#0" expanded="false" />
-            <element signature="e#119287#119288#0" expanded="false" />
-            <element signature="e#119376#119377#0" expanded="false" />
-            <element signature="e#119403#119404#0" expanded="false" />
-            <element signature="e#119489#119490#0" expanded="false" />
-            <element signature="e#119526#119527#0" expanded="false" />
-            <element signature="e#120646#120647#0" expanded="false" />
-            <element signature="e#120673#120674#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1927,7 +1672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="30" column="106" lean-forward="false" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1942,7 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1950,7 +1693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1958,7 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1966,7 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1974,14 +1714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="19" column="118" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2000,15 +1732,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#482#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/MyResponseOrBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="e#0#484#0" expanded="true" />
@@ -2018,7 +1747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/MyRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
+        <state relative-caret-position="405">
           <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
             <element signature="e#0#15875#0" expanded="true" />
@@ -2028,7 +1757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/protolearn/xinle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="420">
           <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
           <folding>
             <element signature="e#0#3091#0" expanded="true" />
@@ -2040,23 +1769,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
           <caret line="217" column="66" lean-forward="false" selection-start-line="217" selection-start-column="66" selection-end-line="217" selection-end-column="66" />
-          <folding>
-            <element signature="e#1524#1589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/xinle.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="150">
           <caret line="13" column="103" lean-forward="false" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2066,8 +1785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="405">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2076,11 +1795,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xinle/grpc/GrpcClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/xinle.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

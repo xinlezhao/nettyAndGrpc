@@ -24,6 +24,16 @@ public final class xinle {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_xinle_protolearn_MyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_xinle_protolearn_StudentAge_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_xinle_protolearn_StudentAge_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_xinle_protolearn_StudentResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_xinle_protolearn_StudentResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -35,11 +45,15 @@ public final class xinle {
     java.lang.String[] descriptorData = {
       "\n\013xinle.proto\022\024com.xinle.protolearn\"\035\n\tM" +
       "yRequest\022\020\n\010username\030\001 \001(\t\"\036\n\nMyResponse" +
-      "\022\020\n\010realname\030\002 \001(\t2n\n\016StudentService\022\\\n\025" +
-      "GetRealnameByusername\022\037.com.xinle.protol" +
-      "earn.MyRequest\032 .com.xinle.protolearn.My" +
-      "Response\"\000B\037\n\024com.xinle.protolearnB\005xinl" +
-      "eP\001b\006proto3"
+      "\022\020\n\010realname\030\002 \001(\t\"\031\n\nStudentAge\022\013\n\003age\030" +
+      "\001 \001(\005\":\n\017StudentResponse\022\014\n\004name\030\001 \001(\t\022\013" +
+      "\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t2\317\001\n\016StudentSer" +
+      "vice\022\\\n\025GetRealnameByusername\022\037.com.xinl" +
+      "e.protolearn.MyRequest\032 .com.xinle.proto" +
+      "learn.MyResponse\"\000\022_\n\020GetStudentsByAge\022 " +
+      ".com.xinle.protolearn.StudentAge\032%.com.x" +
+      "inle.protolearn.StudentResponse\"\0000\001B\037\n\024c",
+      "om.xinle.protolearnB\005xinleP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -65,6 +79,18 @@ public final class xinle {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_xinle_protolearn_MyResponse_descriptor,
         new java.lang.String[] { "Realname", });
+    internal_static_com_xinle_protolearn_StudentAge_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_xinle_protolearn_StudentAge_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_xinle_protolearn_StudentAge_descriptor,
+        new java.lang.String[] { "Age", });
+    internal_static_com_xinle_protolearn_StudentResponse_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_xinle_protolearn_StudentResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_xinle_protolearn_StudentResponse_descriptor,
+        new java.lang.String[] { "Name", "Age", "City", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -39,6 +39,18 @@ public final class StudentServiceGrpc {
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.xinle.protolearn.MyResponse.getDefaultInstance()))
           .build();
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.xinle.protolearn.StudentAge,
+      com.xinle.protolearn.StudentResponse> METHOD_GET_STUDENTS_BY_AGE =
+      io.grpc.MethodDescriptor.<com.xinle.protolearn.StudentAge, com.xinle.protolearn.StudentResponse>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+          .setFullMethodName(generateFullMethodName(
+              "com.xinle.protolearn.StudentService", "GetStudentsByAge"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              com.xinle.protolearn.StudentAge.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              com.xinle.protolearn.StudentResponse.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -74,6 +86,13 @@ public final class StudentServiceGrpc {
       asyncUnimplementedUnaryCall(METHOD_GET_REALNAME_BYUSERNAME, responseObserver);
     }
 
+    /**
+     */
+    public void getStudentsByAge(com.xinle.protolearn.StudentAge request,
+        io.grpc.stub.StreamObserver<com.xinle.protolearn.StudentResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_GET_STUDENTS_BY_AGE, responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -83,6 +102,13 @@ public final class StudentServiceGrpc {
                 com.xinle.protolearn.MyRequest,
                 com.xinle.protolearn.MyResponse>(
                   this, METHODID_GET_REALNAME_BYUSERNAME)))
+          .addMethod(
+            METHOD_GET_STUDENTS_BY_AGE,
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.xinle.protolearn.StudentAge,
+                com.xinle.protolearn.StudentResponse>(
+                  this, METHODID_GET_STUDENTS_BY_AGE)))
           .build();
     }
   }
@@ -112,6 +138,14 @@ public final class StudentServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_REALNAME_BYUSERNAME, getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void getStudentsByAge(com.xinle.protolearn.StudentAge request,
+        io.grpc.stub.StreamObserver<com.xinle.protolearn.StudentResponse> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(METHOD_GET_STUDENTS_BY_AGE, getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -137,6 +171,14 @@ public final class StudentServiceGrpc {
     public com.xinle.protolearn.MyResponse getRealnameByusername(com.xinle.protolearn.MyRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_REALNAME_BYUSERNAME, getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.xinle.protolearn.StudentResponse> getStudentsByAge(
+        com.xinle.protolearn.StudentAge request) {
+      return blockingServerStreamingCall(
+          getChannel(), METHOD_GET_STUDENTS_BY_AGE, getCallOptions(), request);
     }
   }
 
@@ -168,6 +210,7 @@ public final class StudentServiceGrpc {
   }
 
   private static final int METHODID_GET_REALNAME_BYUSERNAME = 0;
+  private static final int METHODID_GET_STUDENTS_BY_AGE = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -189,6 +232,10 @@ public final class StudentServiceGrpc {
         case METHODID_GET_REALNAME_BYUSERNAME:
           serviceImpl.getRealnameByusername((com.xinle.protolearn.MyRequest) request,
               (io.grpc.stub.StreamObserver<com.xinle.protolearn.MyResponse>) responseObserver);
+          break;
+        case METHODID_GET_STUDENTS_BY_AGE:
+          serviceImpl.getStudentsByAge((com.xinle.protolearn.StudentAge) request,
+              (io.grpc.stub.StreamObserver<com.xinle.protolearn.StudentResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -224,6 +271,7 @@ public final class StudentServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new StudentServiceDescriptorSupplier())
               .addMethod(METHOD_GET_REALNAME_BYUSERNAME)
+              .addMethod(METHOD_GET_STUDENTS_BY_AGE)
               .build();
         }
       }

@@ -21,10 +21,7 @@ public class GrpcServer {
             GrpcServer.this.stop();
         }));
 
-
         System.out.println("执行到这里");
-
-
     }
 
 
@@ -36,11 +33,9 @@ public class GrpcServer {
 
 
     private void awaitTermination() throws InterruptedException {
-
         if(null != this.server){
             this.server.awaitTermination();
         }
-
     }
 
 
@@ -50,20 +45,6 @@ public class GrpcServer {
         grpcServer.start();
         grpcServer.awaitTermination();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

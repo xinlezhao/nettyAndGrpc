@@ -39,6 +39,16 @@ public final class xinle {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_xinle_protolearn_StudentResponseList_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_xinle_protolearn_StreamRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_xinle_protolearn_StreamRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_xinle_protolearn_StreamResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_xinle_protolearn_StreamResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -54,16 +64,21 @@ public final class xinle {
       "\001 \001(\005\":\n\017StudentResponse\022\014\n\004name\030\001 \001(\t\022\013" +
       "\n\003age\030\002 \001(\005\022\014\n\004city\030\003 \001(\t\"U\n\023StudentResp" +
       "onseList\022>\n\017studentResponse\030\001 \003(\0132%.com." +
-      "xinle.protolearn.StudentResponse2\273\002\n\016Stu" +
-      "dentService\022\\\n\025GetRealnameByusername\022\037.c" +
+      "xinle.protolearn.StudentResponse\"%\n\rStre" +
+      "amRequest\022\024\n\014request_info\030\001 \001(\t\"\'\n\016Strea" +
+      "mResponse\022\025\n\rresponse_info\030\001 \001(\t2\226\003\n\016Stu" +
+      "dentService\022\\\n\025GetRealnameByusername\022\037.c",
       "om.xinle.protolearn.MyRequest\032 .com.xinl" +
-      "e.protolearn.MyResponse\"\000\022_\n\020GetStudents",
+      "e.protolearn.MyResponse\"\000\022_\n\020GetStudents" +
       "ByAge\022 .com.xinle.protolearn.StudentAge\032" +
       "%.com.xinle.protolearn.StudentResponse\"\000" +
       "0\001\022j\n\027GetStudentWrapperByAges\022 .com.xinl" +
       "e.protolearn.StudentAge\032).com.xinle.prot" +
-      "olearn.StudentResponseList\"\000(\001B\037\n\024com.xi" +
-      "nle.protolearnB\005xinleP\001b\006proto3"
+      "olearn.StudentResponseList\"\000(\001\022Y\n\006Bitalk" +
+      "\022#.com.xinle.protolearn.StreamRequest\032$." +
+      "com.xinle.protolearn.StreamResponse\"\000(\0010" +
+      "\001B\037\n\024com.xinle.protolearnB\005xinleP\001b\006prot",
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -107,6 +122,18 @@ public final class xinle {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_xinle_protolearn_StudentResponseList_descriptor,
         new java.lang.String[] { "StudentResponse", });
+    internal_static_com_xinle_protolearn_StreamRequest_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_com_xinle_protolearn_StreamRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_xinle_protolearn_StreamRequest_descriptor,
+        new java.lang.String[] { "RequestInfo", });
+    internal_static_com_xinle_protolearn_StreamResponse_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_com_xinle_protolearn_StreamResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_xinle_protolearn_StreamResponse_descriptor,
+        new java.lang.String[] { "ResponseInfo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

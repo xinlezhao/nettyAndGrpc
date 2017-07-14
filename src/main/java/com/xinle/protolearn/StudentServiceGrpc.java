@@ -63,6 +63,18 @@ public final class StudentServiceGrpc {
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.xinle.protolearn.StudentResponseList.getDefaultInstance()))
           .build();
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.xinle.protolearn.StreamRequest,
+      com.xinle.protolearn.StreamResponse> METHOD_BITALK =
+      io.grpc.MethodDescriptor.<com.xinle.protolearn.StreamRequest, com.xinle.protolearn.StreamResponse>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+          .setFullMethodName(generateFullMethodName(
+              "com.xinle.protolearn.StudentService", "Bitalk"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              com.xinle.protolearn.StreamRequest.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              com.xinle.protolearn.StreamResponse.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -112,6 +124,13 @@ public final class StudentServiceGrpc {
       return asyncUnimplementedStreamingCall(METHOD_GET_STUDENT_WRAPPER_BY_AGES, responseObserver);
     }
 
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.xinle.protolearn.StreamRequest> bitalk(
+        io.grpc.stub.StreamObserver<com.xinle.protolearn.StreamResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(METHOD_BITALK, responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -135,6 +154,13 @@ public final class StudentServiceGrpc {
                 com.xinle.protolearn.StudentAge,
                 com.xinle.protolearn.StudentResponseList>(
                   this, METHODID_GET_STUDENT_WRAPPER_BY_AGES)))
+          .addMethod(
+            METHOD_BITALK,
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                com.xinle.protolearn.StreamRequest,
+                com.xinle.protolearn.StreamResponse>(
+                  this, METHODID_BITALK)))
           .build();
     }
   }
@@ -179,6 +205,14 @@ public final class StudentServiceGrpc {
         io.grpc.stub.StreamObserver<com.xinle.protolearn.StudentResponseList> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(METHOD_GET_STUDENT_WRAPPER_BY_AGES, getCallOptions()), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.xinle.protolearn.StreamRequest> bitalk(
+        io.grpc.stub.StreamObserver<com.xinle.protolearn.StreamResponse> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(METHOD_BITALK, getCallOptions()), responseObserver);
     }
   }
 
@@ -246,6 +280,7 @@ public final class StudentServiceGrpc {
   private static final int METHODID_GET_REALNAME_BYUSERNAME = 0;
   private static final int METHODID_GET_STUDENTS_BY_AGE = 1;
   private static final int METHODID_GET_STUDENT_WRAPPER_BY_AGES = 2;
+  private static final int METHODID_BITALK = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -285,6 +320,9 @@ public final class StudentServiceGrpc {
         case METHODID_GET_STUDENT_WRAPPER_BY_AGES:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.getStudentWrapperByAges(
               (io.grpc.stub.StreamObserver<com.xinle.protolearn.StudentResponseList>) responseObserver);
+        case METHODID_BITALK:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.bitalk(
+              (io.grpc.stub.StreamObserver<com.xinle.protolearn.StreamResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -311,6 +349,7 @@ public final class StudentServiceGrpc {
               .addMethod(METHOD_GET_REALNAME_BYUSERNAME)
               .addMethod(METHOD_GET_STUDENTS_BY_AGE)
               .addMethod(METHOD_GET_STUDENT_WRAPPER_BY_AGES)
+              .addMethod(METHOD_BITALK)
               .build();
         }
       }
